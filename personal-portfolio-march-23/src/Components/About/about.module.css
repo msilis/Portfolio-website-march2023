@@ -1,0 +1,38 @@
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    animation: 0.4s aboutAnimation ease-out 1;
+}
+
+@keyframes aboutAnimation {
+    0%{
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.25
+    }
+    50% {
+        opacity: .50
+    }
+    75% {
+        opacity: .75
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
