@@ -1,0 +1,42 @@
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    width: 18rem;
+    padding: .5rem;
+    outline: .5px solid #333333;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #333333;
+}
+
+.projectImage {
+    width: 15rem;
+    height: auto;
+}
+
+.progressText {
+    color: #FF5757;
+    font-style: italic;
+}
+
+.linkList {
+    display: flex;
+    position: relative;
+    gap: 1rem;
+    margin-bottom: 0;
+    margin-top: auto;
+}
+
+.linkStyle {
+    transition: .3s;
+}
+
+.linkStyle:hover {
+    cursor: pointer;
+    color: #F4B266;
+}
+
+.projectLink {
+    text-decoration: none;
+}

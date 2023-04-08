@@ -1,59 +1,55 @@
 .landingContainer {
-    width: 100dvw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    animation: landingAnimation 0.4s ease-out 1;
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  animation: landingAnimation 0.4s ease-out 1;
 }
 
 #techStackTag {
-    max-width: 80dvw;
-    min-width: 300px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
+  max-width: 80dvw;
+  min-width: 300px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Profile pic */
 
 #profilePicture {
+  height: auto;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 420px) {
+  #profilePicture {
     height: auto;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
-  
-  @media only screen and (max-width: 420px ) {
-    #profilePicture {
-      height: auto;
-      width: 100%;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-    }
-    
+}
+
+@keyframes landingAnimation {
+  0% {
+    opacity: 0;
   }
 
-  @keyframes landingAnimation {
-    
-    0% {
-        opacity: 0;
-    }
-
-    25% {
-        opacity: .25;
-    }
-
-    50% {
-        opacity: .50;
-    }
-    75% {
-        opacity: .75;
-    }
-    100% {
-        opacity: 1;
-    }
+  25% {
+    opacity: 0.25;
   }
+
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}

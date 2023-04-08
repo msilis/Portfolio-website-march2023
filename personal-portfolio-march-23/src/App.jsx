@@ -44,6 +44,9 @@ function handleNameTagClick(){
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
       </div>
+      <div className={style.footer}>
+        <p className={style.footerText}>Made by hand, 2023.</p>
+      </div>
     </div>
   );
 }
