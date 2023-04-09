@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1128"
+   height="376"
+   viewBox="0 0 1128 376"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="nameTag.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="nameTag.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="1.1560284"
+     inkscape:cx="506.04294"
+     inkscape:cy="187.71166"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="183.12009"
+       y="48.454334"
+       width="777.62213"
+       height="132.88164"
+       id="rect236" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       id="text234"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect236);display:inline;fill:#0cbfde;fill-opacity:1;stroke:#0cc0df;stroke-width:0.519493;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(4.2881883,0,0,4.4668654,-472.24784,-235.20332)"><tspan
+         x="183.11914"
+         y="93.095078"
+         id="tspan5077">MIKS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:196.091px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#0cc0df;stroke-width:0.602;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+       x="349.19363"
+       y="333.88953"
+       id="text1020"><tspan
+         sodipodi:role="line"
+         id="tspan1018"
+         x="349.19363"
+         y="333.88953">SILIS</tspan></text>
+  </g>
+</svg>
