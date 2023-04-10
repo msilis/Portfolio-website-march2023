@@ -8,12 +8,18 @@
   height: 3rem;
   margin-bottom: 1rem;
   filter: drop-shadow(10px 10px 10px gray);
+  padding-bottom: 12px;
   
 }
 
 .linkContainerShowMenu {
   height: 10rem;
-  animation: animateMenu .3s ease-in 1;
+  animation: animateMenuOpen .3s ease-in 1;
+}
+
+.linkContainerHideMenu {
+    height: 4rem;
+    animation: animateMenuClosed .3s ease-in 1;
 }
 
 #navigationList {
@@ -28,7 +34,7 @@
 
 #navigationListAnimate {
  
-  animation: animateMenu 0.3s ease-in 1;
+  animation: animateMenuOpen 0.3s ease-in 1;
 }
 
 .linkStyle {
@@ -46,6 +52,7 @@
 
 .linkListItemVisible {
   display: block;
+  animation: animateList 0.5s ease-in 1;
 }
 
 .linkListItem:hover {
@@ -54,16 +61,43 @@
 
 /* Show menu animation */
 
-@keyframes animateMenu {
+@keyframes animateList {
+    0% {
+        opacity: 0
+    }
+    25%{
+        opacity: .25;
+    }
+    50% {
+        opacity: .5
+    }
+    100%{
+        opacity: 1
+    }
+    
+}
+
+@keyframes animateMenuOpen {
   0% {
-    opacity: 0;
+    
     height: 4rem;
   }
   100% {
-    opacity: 1;
+    
     height: 10rem;
   }
 }
+
+@keyframes animateMenuClosed {
+    0% {
+      
+      height: 10rem;
+    }
+    100% {
+      
+      height: 4rem;
+    }
+  }
 
 /* Hamburger Menu */
 

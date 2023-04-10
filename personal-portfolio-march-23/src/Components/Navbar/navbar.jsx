@@ -16,7 +16,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className={classnames(style.linkContainer, {[style.linkContainerShowMenu]: hamburgerState})}>
+    <div className={classnames(style.linkContainer, {[style.linkContainerShowMenu]: hamburgerState}, {[style.linkContainerHideMenu]: !hamburgerState})}>
       <ul id={classnames(style.navigationList)}>
         <div className={style.hamburgerMenu} onClick={handleHamburgerClick}>
           <span
