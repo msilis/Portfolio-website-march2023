@@ -8,6 +8,11 @@
     outline: .5px solid #333333;
     border-radius: 10px;
     box-shadow: 5px 5px 5px #333333;
+    transition: .3s ease-out;
+}
+
+.projectContainer:hover {
+    box-shadow: 5px 5px 5px gray;
 }
 
 .projectImage {

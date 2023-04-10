@@ -5,7 +5,7 @@ import Projects from "./Components/Projects/projects";
 import Landing from "./Components/Landing/landing";
 import About from "./Components/About/about";
 import Contact from "./Components/Contact/contact";
-import { StickyContainer, Sticky } from "react-sticky";
+import Navbar from "./Components/Navbar/navbar";
 
 function App() {
   //Name tag redirect
@@ -26,19 +26,7 @@ function App() {
         />
         <h3 id={style.headline}>Frontend Developer</h3>
       </div>
-      <div className={style.linkContainer}>
-        <ul id={style.navigationList}>
-          <Link to="/projects" className={style.linkStyle}>
-            <li className={style.linkListItem}>Projects</li>
-          </Link>
-          <Link to="/about" className={style.linkStyle}>
-            <li className={style.linkListItem}>About</li>
-          </Link>
-          <Link to="/contact" className={style.linkStyle}>
-            <li className={style.linkListItem}>Contact</li>
-          </Link>
-        </ul>
-      </div>
+      <Navbar />
       <div className={style.routesContainer}>
         <Routes>
           <Route path="/" element={<Landing />} />
