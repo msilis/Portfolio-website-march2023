@@ -8,6 +8,21 @@
     animation: 0.4s aboutAnimation ease-out 1;
 }
 
+.showCV {
+    padding-bottom: 1rem;
+}
+
+.cvLink {
+    text-decoration: none;
+    font-weight: 800;
+    color: black;
+    transition: .3s;
+}
+
+.cvLink:hover {
+    color: #ff5757;
+}
+
 @keyframes aboutAnimation {
     0%{
         opacity: 0;

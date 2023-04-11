@@ -1,4 +1,5 @@
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import style from "./App.module.css";
 import nameImg from "./assets/nameTagSmaller.svg";
 import Projects from "./Components/Projects/projects";
@@ -8,10 +9,17 @@ import Contact from "./Components/Contact/contact";
 import Navbar from "./Components/Navbar/navbar";
 
 function App() {
+
+  const [hamburgerState, setHamburgerState] = useState(false);
   //Name tag redirect
 
   const navigate = useNavigate();
+  const navigationProps={
+    hamburgerState,
+    setHamburgerState
+  }
   function handleNameTagClick() {
+    setHamburgerState(false)
     navigate("/");
   }
 
@@ -26,7 +34,7 @@ function App() {
         />
         <h3 id={style.headline}>Frontend Developer</h3>
       </div>
-      <Navbar />
+      <Navbar navProps={navigationProps} />
       <div className={style.routesContainer}>
         <Routes>
           <Route path="/" element={<Landing />} />

@@ -3,9 +3,10 @@
   display: flex;
   position: sticky;
   justify-content: center;
+  /* background-color: #ff5757; */
   top: -1rem;
   z-index: 999;
-  height: 3rem;
+  height: 2.5rem;
   margin-bottom: 1rem;
   filter: drop-shadow(10px 10px 10px gray);
   padding-bottom: 12px;
@@ -18,7 +19,7 @@
 }
 
 .linkContainerHideMenu {
-    height: 4rem;
+    height: 3rem;
     animation: animateMenuClosed .3s ease-in 1;
 }
 
@@ -80,7 +81,7 @@
 @keyframes animateMenuOpen {
   0% {
     
-    height: 4rem;
+    height: 3rem;
   }
   100% {
     
@@ -103,7 +104,7 @@
 
 .hamburgerMenu {
   display: block;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
   width: 30px;
   height: 25px;
   position: relative;

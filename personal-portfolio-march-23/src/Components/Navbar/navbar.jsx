@@ -1,44 +1,44 @@
 import style from "./navbar.module.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import classnames from "classnames";
 
-export default function Navbar() {
+export default function Navbar({navProps}) {
   //Hamburger menu state
-  const [hamburgerState, setHamburgerState] = useState(false);
+  console.log(navProps)
+  
 
   function handleHamburgerClick() {
-    setHamburgerState(!hamburgerState);
+    navProps.setHamburgerState(!navProps.hamburgerState);
   }
 
   function handleMenuClick() {
-    setHamburgerState(false);
+    navProps.setHamburgerState(false);
   }
 
   return (
-    <div className={classnames(style.linkContainer, {[style.linkContainerShowMenu]: hamburgerState}, {[style.linkContainerHideMenu]: !hamburgerState})}>
+    <div className={classnames(style.linkContainer, {[style.linkContainerShowMenu]: navProps.hamburgerState}, {[style.linkContainerHideMenu]: !navProps.hamburgerState})}>
       <ul id={classnames(style.navigationList)}>
         <div className={style.hamburgerMenu} onClick={handleHamburgerClick}>
           <span
             className={`${style.hamburgerLine} ${
-              hamburgerState ? style.active : ""
+              navProps.hamburgerState ? style.active : ""
             }`}
           ></span>
           <span
             className={`${style.hamburgerLine} ${
-              hamburgerState ? style.active : ""
+              navProps.hamburgerState ? style.active : ""
             }`}
           ></span>
           <span
             className={`${style.hamburgerLine} ${
-              hamburgerState ? style.active : ""
+              navProps.hamburgerState ? style.active : ""
             }`}
           ></span>
         </div>
         <Link to="/projects" className={style.linkStyle}>
           <li
             className={classnames(style.linkListItem, {
-              [style.linkListItemVisible]: hamburgerState,
+              [style.linkListItemVisible]: navProps.hamburgerState,
             })}
             onClick={handleMenuClick}
           >
@@ -48,7 +48,7 @@ export default function Navbar() {
         <Link to="/about" className={style.linkStyle}>
           <li
             className={classnames(style.linkListItem, {
-              [style.linkListItemVisible]: hamburgerState,
+              [style.linkListItemVisible]: navProps.hamburgerState,
             })}
             onClick={handleMenuClick}
           >
@@ -58,7 +58,7 @@ export default function Navbar() {
         <Link to="/contact" className={style.linkStyle}>
           <li
             className={classnames(style.linkListItem, {
-              [style.linkListItemVisible]: hamburgerState,
+              [style.linkListItemVisible]: navProps.hamburgerState,
             })}
             onClick={handleMenuClick}
           >
