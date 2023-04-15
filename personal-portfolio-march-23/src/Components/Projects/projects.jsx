@@ -7,6 +7,7 @@ import {
   creditCardCheckerProps,
   pepperShakersProps,
   groupIdeasProps,
+  catFactsProps
 } from "./projectData";
 
 export default function Projects() {
@@ -21,6 +22,7 @@ export default function Projects() {
         <ProjectCard cardData={practiceHelpProps} />
         <ProjectCard cardData={creditCardCheckerProps} />
         <ProjectCard cardData={pepperShakersProps} />
+        <ProjectCard cardData={catFactsProps} />
       </div>
     </div>
   );

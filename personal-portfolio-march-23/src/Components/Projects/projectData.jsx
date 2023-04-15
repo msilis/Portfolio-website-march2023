@@ -3,6 +3,7 @@ import practiceHelpPic from "../../assets/projectAssets/practiceHelpScreenshot.p
 import creditCardCheckerPic from "../../assets/projectAssets/cardCheckerPic.png";
 import pepperShakersPic from "../../assets/projectAssets/pepperShakersScreenshot.png";
 import groupIdeasPic from "../../assets/projectAssets/groupIdeasLinkedIn.png";
+import catFactPic from "../../assets/projectAssets/CatFactPic.png";
 
 const getItDoneProps = {
   projectImage: getItDonePic,
@@ -49,10 +50,19 @@ const groupIdeasProps = {
   inProgress: "yes",
 };
 
+const catFactsProps = {
+  projectImage: catFactPic,
+  projectTitle: "Cat Facts",
+  projectText: "A single page application which calls the Cat Facts API and displays a random fact about cats at the push of a button.",
+  projectGithub: "https://github.com/msilis/cats",
+  projectLive: "https://bit.ly/3IgXMbR"
+}
+
 export {
   getItDoneProps,
   practiceHelpProps,
   creditCardCheckerProps,
   pepperShakersProps,
   groupIdeasProps,
+  catFactsProps,
 };
