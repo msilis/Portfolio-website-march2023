@@ -3,12 +3,10 @@
   display: flex;
   position: sticky;
   justify-content: center;
-  /* background-color: #ff5757; */
   top: -1rem;
   z-index: 999;
   height: 2.5rem;
   margin-bottom: 1rem;
-  filter: drop-shadow(10px 10px 10px gray);
   padding-bottom: 12px;
   
 }
@@ -31,6 +29,7 @@
   list-style: none;
   flex-direction: column;
   align-items: center;
+  margin-top: 0px;
 }
 
 #navigationListAnimate {
@@ -152,4 +151,10 @@
   transform: rotate(-45deg) translateX(3px) translateY(5px);
   top: 9px;
   left: -6px;
+}
+
+@media only screen and (max-width: 414px){
+  .linkContainer {
+    top: 0px;
+  }
 }

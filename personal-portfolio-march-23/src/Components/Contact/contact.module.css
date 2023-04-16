@@ -13,10 +13,15 @@
   
 }
 
+.contactMeText {
+    color: white;
+}
+
 .contactListLink {
   text-decoration: none;
   display: flex;
   align-items: center;
+  color: white;
 }
 
 @keyframes contactAnimation {

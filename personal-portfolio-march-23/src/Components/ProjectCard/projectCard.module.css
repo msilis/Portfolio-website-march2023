@@ -5,14 +5,15 @@
     margin: 1rem;
     width: 18rem;
     padding: .5rem;
-    outline: .5px solid #333333;
+    outline: 5px solid #333333;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px #333333;
+    /* box-shadow: 5px 5px 5px #333333; */
     transition: .3s ease-out;
+    color: white;
 }
 
 .projectContainer:hover {
-    box-shadow: 5px 5px 5px gray;
+    transform: scale(1.02)
 }
 
 .projectImage {
@@ -39,9 +40,10 @@
 
 .linkStyle:hover {
     cursor: pointer;
-    color: #F4B266;
+    color: #FF5757;
 }
 
 .projectLink {
     text-decoration: none;
+    color: white;
 }

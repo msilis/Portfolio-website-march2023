@@ -8,7 +8,7 @@ import linkedInLogo from "../../assets/icons8-linkedin.svg";
 export default function Contact() {
   return (
     <div className={style.contactContainer}>
-      <h2>Contact Me</h2>
+      <h2 className={style.contactMeText}>Contact Me</h2>
       <div className={style.contactDetails}>
         <ul className={style.contactList}>
           <li className={style.contactListItem} title="Hit me up on email">

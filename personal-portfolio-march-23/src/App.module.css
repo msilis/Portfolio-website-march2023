@@ -2,49 +2,61 @@
   max-width: 1280px;
   margin: 0 auto;
   text-align: center;
+  line-height: 1;
 }
 .App {
   display: flex;
   flex-direction: column;
-  /* height: 100%; */
   min-height: 100dvh;
+  /* background-color: black; */
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 35%,
+    rgba(12, 192, 223, 1) 100%
+  );
 }
 
 .nameContainer {
-  width: 100dvw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-top: 1rem;
+  gap: 1.5rem;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 35%,
+    rgba(12, 192, 223, 1) 100%
+  );
 }
 
-#nameTag {
-  height: 15rem;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1rem;
-  filter: drop-shadow(5px 5px 5px gray);
-  transition: 0.25s;
-  padding-bottom: 14px;
-  z-index: 1;
+.nameTextContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: -5rem;
 }
 
-#nameTag:hover {
+.nameTextContainer:hover {
   cursor: pointer;
 }
 
-#nameTag:active {
-  transform: scale(95%);
+.firstName,
+.lastName {
+  font-family: "Permanent Marker", cursive;
+  color: white;
+  font-size: 8rem;
+  /* filter: drop-shadow(5px 5px 5px #0cc0df); */
 }
 
 #headline {
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 2rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   z-index: 4;
+  color: white;
+  /* filter: drop-shadow(5px 5px 5px gray); */
 }
 
 /* Footer styling */
@@ -61,4 +73,17 @@
   font-style: italic;
   margin-left: 2rem;
   margin-top: 0.5rem;
+}
+
+/* Small screen */
+
+@media only screen and (max-width: 414px) {
+  .nameTextContainer {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .firstName {
+    margin-bottom: -5.5rem;
+  }
 }

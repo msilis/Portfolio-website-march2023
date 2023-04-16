@@ -9,30 +9,33 @@ import Contact from "./Components/Contact/contact";
 import Navbar from "./Components/Navbar/navbar";
 
 function App() {
-
   const [hamburgerState, setHamburgerState] = useState(false);
   //Name tag redirect
 
   const navigate = useNavigate();
-  const navigationProps={
+  const navigationProps = {
     hamburgerState,
-    setHamburgerState
-  }
+    setHamburgerState,
+  };
   function handleNameTagClick() {
-    setHamburgerState(false)
+    setHamburgerState(false);
     navigate("/");
   }
 
   return (
     <div className={style.App}>
       <div className={style.nameContainer}>
-        <img
-          src={nameImg}
-          alt="Miks Silis"
-          id={style.nameTag}
-          onClick={handleNameTagClick}
-        />
-        <h3 id={style.headline}>Frontend Developer</h3>
+        <div className={style.nameTextContainer} onClick={handleNameTagClick}>
+          <div className={style.firstName}>
+            <span className={style.firstNameText}>Miks</span>
+          </div>
+          <div className={style.lastName}>
+            <span className={style.lastNameText}>Silis</span>
+          </div>
+        </div>
+        <div className={style.headlineContainer}>
+            <h3 id={style.headline}>Frontend Developer</h3>
+          </div>
       </div>
       <Navbar navProps={navigationProps} />
       <div className={style.routesContainer}>

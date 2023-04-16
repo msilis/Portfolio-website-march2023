@@ -1,6 +1,6 @@
 import style from "./landing.module.css";
 /* Images */
-import techStackLogo from "../../assets/techStackImg.png";
+import techStackLogo from "../../assets/transparent-techStackImg-noText.svg";
 import profilePic from "../../assets/IMG-6865.webp";
 
 export default function Landing() {
