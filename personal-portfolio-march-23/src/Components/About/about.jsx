@@ -1,5 +1,5 @@
 import style from "./about.module.css";
-import cvFile from "../../assets/01_Miks_Silis_CV.pdf"
+import cvFile from "../../assets/Miks-Silis-CV-2023.pdf"
 
 export default function About(){
     return(
