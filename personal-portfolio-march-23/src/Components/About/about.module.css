@@ -26,6 +26,16 @@
     color: #ff5757;
 }
 
+.p1, .p3 {
+    width: 100%;
+    animation: slideFromRight 1s;
+}
+
+.p2, .p4 {
+    width: 100%;
+    animation: slideFromLeft 1s;
+}
+
 @keyframes aboutAnimation {
     0%{
         opacity: 0;
@@ -43,6 +53,30 @@
         opacity: 1
     }
 }
+
+@keyframes slideFromRight {
+    from {
+        margin-left: 100%;
+        width: 100%;
+      }
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+}
+
+@keyframes slideFromLeft {
+    from {
+        margin-right: 100%;
+        width: 100%;
+    }
+    to {
+        margin-right: 0%;
+        width: 100%;
+    }
+}
+
+
 
 @media only screen and (max-width: 420px){
     .aboutContainer {

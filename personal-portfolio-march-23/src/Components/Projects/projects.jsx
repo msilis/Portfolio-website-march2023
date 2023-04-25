@@ -11,7 +11,7 @@ import {
 } from "./projectData";
 
 export default function Projects() {
-  return (
+  return (  
     <div className={style.projectsContainer}>
       <h3 className={style.projectHeading}>
         Here are some of the projects I've built:
